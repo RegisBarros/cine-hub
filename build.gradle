@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group = 'com.reacttivespring'
+group = 'com.cine'
 version = '1.0-SNAPSHOT'
 
 repositories {

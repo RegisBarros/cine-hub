@@ -1,2 +1,5 @@
 rootProject.name = 'cine-hub'
 
+include 'movies-service'
+include 'movies-review-service'
+include 'movies-info-service'

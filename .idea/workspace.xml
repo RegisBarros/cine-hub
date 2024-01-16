@@ -4,7 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47c9036b-2d13-42ba-b016-7b6dca7d2396" name="Changes" comment="" />
+    <list default="true" id="47c9036b-2d13-42ba-b016-7b6dca7d2396" name="Changes" comment="initial commit">
+      <change afterPath="$PROJECT_DIR$/movies-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies-service/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies-service/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies-service/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies-service/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies-service/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies-service/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies-service/src/main/java/com/cine/MoviesServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies-service/src/main/java/com/cine/domain/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies-service/src/main/java/com/cine/domain/MovieInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies-service/src/main/java/com/cine/domain/Review.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies-service/src/main/java/com/cine/exception/MoviesInfoClientException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies-service/src/main/java/com/cine/exception/MoviesInfoServerException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies-service/src/main/java/com/cine/exception/ReviewsClientException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies-service/src/main/java/com/cine/exception/ReviewsServerException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies-service/src/test/java/com/cine/MoviesServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,29 +35,78 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+    <projectState path="$PROJECT_DIR$/movies-service">
+      <ProjectState />
+    </projectState>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 3
 }]]></component>
   <component name="ProjectId" id="2b0uMdfyQ3WNc55PvLzWlEaHXcp" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Gradle.Build cine-hub.executor": "Run",
+    "Gradle.Build movies-service.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "temurin-21",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/regis/Developer/java-projects/cine-hub/movies-service/src/main/java/com/cine/exception",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/movies-service/src/main/java/com/cine/exception" />
+      <recent name="$PROJECT_DIR$/movies-service/src/main/java/com/cine/domain" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.MoviesServiceApplication">
+    <configuration name="MoviesReviewServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="movies-review-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cine.MoviesReviewServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MoviesServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="cine-hub.movies-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cine.MoviesServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MoviesServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="movies-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cine.MoviesServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -52,8 +122,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1705364271460</updated>
-      <workItem from="1705364272543" duration="2000" />
+      <workItem from="1705364272543" duration="1193000" />
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1705364400713</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1705364400713</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
 </project>
