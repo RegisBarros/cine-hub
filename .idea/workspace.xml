@@ -4,19 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47c9036b-2d13-42ba-b016-7b6dca7d2396" name="Changes" comment="create microservices">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movies-info-service/src/main/java/com/cine/domain/MovieInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movies-info-service/src/main/java/com/cine/repository/MovieInfoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movies-info-service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movies-info-service/src/test/java/com/cine/integration/repository/MovieInfoRepositoryIntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="47c9036b-2d13-42ba-b016-7b6dca7d2396" name="Changes" comment="create microservices movie info services">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies-info-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/movies-info-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies-info-service/src/main/java/com/cine/MoviesInfoServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/movies-info-service/src/main/java/com/cine/MoviesInfoServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies-info-service/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies-info-service/src/test/java/com/cine/MoviesInfoServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/movies-info-service/src/test/java/com/cine/MoviesInfoServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movies-info-service/src/test/java/com/cine/integration/repository/MovieInfoRepositoryIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/movies-info-service/src/test/java/com/cine/integration/repository/MovieInfoRepositoryIntegrationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,6 +106,9 @@
     "Gradle.Build movies-service.executor": "Run",
     "Gradle.MovieInfoRepositoryIntegrationTest.executor": "Run",
     "Gradle.MovieInfoRepositoryIntegrationTest.findAll.executor": "Run",
+    "Gradle.MovieInfoRepositoryIntegrationTest.findById.executor": "Run",
+    "Gradle.MovieInfoRepositoryIntegrationTest.saveMovieInfo.executor": "Run",
+    "Gradle.MovieInfoRepositoryIntegrationTest.updateMovieInfo.executor": "Run",
     "Gradle.MovieInfoRepositoryTest (1).executor": "Run",
     "Gradle.MovieInfoRepositoryTest (2).executor": "Run",
     "Gradle.MovieInfoRepositoryTest.executor": "Run",
@@ -175,7 +168,7 @@
       <recent name="com.cine.domain" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MovieInfoRepositoryIntegrationTest">
+  <component name="RunManager" selected="Gradle.MovieInfoRepositoryIntegrationTest.deleteMovieInfo">
     <configuration name="MovieInfoRepositoryIntegrationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -200,7 +193,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="MovieInfoRepositoryIntegrationTest.findAll" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MovieInfoRepositoryIntegrationTest.deleteMovieInfo" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/movies-info-service" />
@@ -213,7 +206,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.cine.integration.repository.MovieInfoRepositoryIntegrationTest.findAll&quot;" />
+            <option value="&quot;com.cine.integration.repository.MovieInfoRepositoryIntegrationTest.deleteMovieInfo&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -224,10 +217,10 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="MoviesInfoServiceApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MovieInfoRepositoryIntegrationTest.findById" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/movies-info-service" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
@@ -235,9 +228,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":movies-info-service:test" />
+            <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.cine.MoviesInfoServiceApplicationTests&quot;" />
+            <option value="&quot;com.cine.integration.repository.MovieInfoRepositoryIntegrationTest.findById&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -248,48 +241,52 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="cine-hub [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MovieInfoRepositoryIntegrationTest.saveMovieInfo" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/movies-info-service" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="build" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.cine.integration.repository.MovieInfoRepositoryIntegrationTest.saveMovieInfo&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="cine-hub [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MovieInfoRepositoryIntegrationTest.updateMovieInfo" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/movies-info-service" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="clean" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.cine.integration.repository.MovieInfoRepositoryIntegrationTest.updateMovieInfo&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="MoviesInfoServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
@@ -342,11 +339,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MovieInfoRepositoryIntegrationTest.deleteMovieInfo" />
+        <item itemvalue="Gradle.MovieInfoRepositoryIntegrationTest.updateMovieInfo" />
+        <item itemvalue="Gradle.MovieInfoRepositoryIntegrationTest.saveMovieInfo" />
+        <item itemvalue="Gradle.MovieInfoRepositoryIntegrationTest.findById" />
         <item itemvalue="Gradle.MovieInfoRepositoryIntegrationTest" />
-        <item itemvalue="Gradle.MovieInfoRepositoryIntegrationTest.findAll" />
-        <item itemvalue="Gradle.MoviesInfoServiceApplicationTests" />
-        <item itemvalue="Gradle.cine-hub [build]" />
-        <item itemvalue="Gradle.cine-hub [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -379,7 +376,7 @@
       <workItem from="1706189435710" duration="2271000" />
       <workItem from="1706381259640" duration="171000" />
       <workItem from="1706381443881" duration="2469000" />
-      <workItem from="1706575529398" duration="689000" />
+      <workItem from="1706575529398" duration="1611000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -397,7 +394,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705366062644</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="create microservices movie info services">
+      <option name="closed" value="true" />
+      <created>1706576565836</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706576565836</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,6 +412,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="initial commit" />
     <MESSAGE value="create microservices" />
-    <option name="LAST_COMMIT_MESSAGE" value="create microservices" />
+    <MESSAGE value="create microservices movie info services" />
+    <option name="LAST_COMMIT_MESSAGE" value="create microservices movie info services" />
   </component>
 </project>

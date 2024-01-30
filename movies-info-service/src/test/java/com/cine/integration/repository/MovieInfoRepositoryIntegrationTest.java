@@ -66,4 +66,54 @@ public class MovieInfoRepositoryIntegrationTest {
                 })
                 .verifyComplete();
     }
+
+    @Test
+    void saveMovieInfo() {
+        // given
+        var movieInfo = new MovieInfo(null, "Batman Begins Sample", 2005, List.of("Christian Bale", "Michael Cane"), LocalDate.parse("2005-06-15"));
+
+        // when
+        Mono<MovieInfo> movieInfoMono = movieInfoRepository.save(movieInfo);
+
+        // then
+        StepVerifier.create(movieInfoMono)
+                .assertNext(result -> {
+                    assertThat(result.getId()).isNotNull();
+                    assertThat(result.getName()).isEqualTo(movieInfo.getName());
+                    assertThat(result.getYear()).isEqualTo(movieInfo.getYear()) ;
+                    assertThat(result.getReleaseDate()).isEqualTo(movieInfo.getReleaseDate()) ;
+                })
+                .verifyComplete();
+    }
+
+    @Test
+    void updateMovieInfo() {
+        // given
+        MovieInfo movieInfo = movieInfoRepository.findById("abc").block();
+        movieInfo.setYear(2013);
+
+        // when
+        Mono<MovieInfo> movieInfoMono = movieInfoRepository.save(movieInfo);
+
+        // then
+        StepVerifier.create(movieInfoMono)
+                .assertNext(result -> assertThat(result.getYear()).isEqualTo(movieInfo.getYear()))
+                .verifyComplete();
+    }
+
+    @Test
+    void deleteMovieInfo() {
+        // given
+        String movieInfoId = "abc";
+
+        // when
+        movieInfoRepository.deleteById(movieInfoId).block();
+
+        var moviesInfoFlux = movieInfoRepository.findAll();
+
+        // then
+        StepVerifier.create(moviesInfoFlux)
+                .expectNextCount(2)
+                .verifyComplete();
+    }
 }
